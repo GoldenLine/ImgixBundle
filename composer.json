@@ -1,0 +1,20 @@
+{
+    "name": "goldenline/imgix-bundle",
+    "description": "Integration of the imgix library into Symfony",
+    "keywords": ["imgix"],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sebastian Grodzicki",
+            "email": "sebastian@grodzicki.pl"
+        }
+    ],
+    "require": {
+        "symfony/framework-bundle": "~2.3",
+        "imgix/imgix-php": "dev-master#2595424d701f1c62d3f511f1e69fcbd25efa85df"
+    },
+    "autoload": {
+        "psr-0": {"GoldenLine\\ImgixBundle": ""}
+    }
+}

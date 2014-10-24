@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="goldenline_imgix.twig.url_builder_extension.class">GoldenLine\ImgixBundle\Twig\UrlBuilderExtension</parameter>
+        <parameter key="goldenline_imgix.url_builder.class">Imgix\UrlBuilder</parameter>
+    </parameters>
+
+    <services>
+        <service id="goldenline_imgix.twig.url_builder_extension" class="%goldenline_imgix.twig.url_builder_extension.class%" public="false">
+            <argument type="service" id="router.request_context" />
+            <argument type="string">%goldenline_imgix.default_source%</argument>
+            <tag name="twig.extension" />
+        </service>
+    </services>
+</container>
