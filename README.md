@@ -27,6 +27,31 @@ public function registerBundles()
 }
 ```
 
+Finally add your sources:
+```yml
+golden_line_imgix:
+    default_source: folder
+    sources:
+        folder:
+            domains:  [ acme.imgix.net ]
+        proxy:
+            domains:  [ acme-proxy.imgix.net ]
+            sign_key: abcd1234
+```
+
+Usage
+-----
+
+In your Twig template just do:
+
+```twig
+<!-- Absolute URL with a web proxy source -->
+<img src="{{ imgix('https://assets-cdn.github.com/images/modules/logos_page/Octocat.png', width=200, height=166) }}" width="200" height="166"/>
+
+<!-- Absolute path with a web folder source -->
+<img src="{{ imgix('images/modules/logos_page/Octocat.png', width=200, height=166) }}" width="200" height="166"/>
+```
+
 License
 -------
 
