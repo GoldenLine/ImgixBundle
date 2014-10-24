@@ -17,5 +17,5 @@
     "autoload": {
         "psr-0": {"GoldenLine\\ImgixBundle": ""}
     },
-    "target-dir": "GoldenLine/ImgixBundle",
+    "target-dir": "GoldenLine/ImgixBundle"
 }
