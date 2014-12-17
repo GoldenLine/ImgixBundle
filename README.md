@@ -1,4 +1,4 @@
-GoldenLineImgixBundle
+GoldenlineImgixBundle
 =====================
 
 Integration of the imgix library into Symfony.
