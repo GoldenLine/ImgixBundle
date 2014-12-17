@@ -22,14 +22,14 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new GoldenLine\ImgixBundle\GoldenLineImgixBundle(),
+        new GoldenLine\ImgixBundle\GoldenlineImgixBundle(),
     );
 }
 ```
 
 Finally add your sources:
 ```yml
-golden_line_imgix:
+goldenline_imgix:
     default_source: folder
     sources:
         folder:

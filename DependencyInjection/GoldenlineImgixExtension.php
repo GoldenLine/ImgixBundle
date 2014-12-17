@@ -10,7 +10,7 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\Loader;
 use Imgix\ShardStrategy;
 
-class GoldenLineImgixExtension extends Extension
+class GoldenlineImgixExtension extends Extension
 {
     /**
      * {@inheritDoc}
