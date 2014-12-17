@@ -46,10 +46,10 @@ In your Twig template just do:
 
 ```twig
 <!-- Absolute URL with a web proxy source -->
-<img src="{{ imgix('https://assets-cdn.github.com/images/modules/logos_page/Octocat.png', width=200, height=166) }}" width="200" height="166"/>
+<img src="{{ imgix('https://assets-cdn.github.com/images/modules/logos_page/Octocat.png', source='proxy', width=200, height=166) }}" width="200" height="166"/>
 
 <!-- Absolute path with a web folder source -->
-<img src="{{ imgix('images/modules/logos_page/Octocat.png', source='proxy', width=200, height=166) }}" width="200" height="166"/>
+<img src="{{ imgix('images/modules/logos_page/Octocat.png', width=200, height=166) }}" width="200" height="166"/>
 ```
 
 License
