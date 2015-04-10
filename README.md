@@ -1,6 +1,8 @@
 GoldenlineImgixBundle
 =====================
 
+[![Dependency Status](https://www.versioneye.com/user/projects/55278ab52ced4ffffe00061b/badge.svg?style=flat)](https://www.versioneye.com/user/projects/55278ab52ced4ffffe00061b)
+
 Integration of the imgix library into Symfony.
 
 Installation
